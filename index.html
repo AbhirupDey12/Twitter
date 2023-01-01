@@ -1,14 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Twitter Clone</title>
 </head>
+
 <body>
-    <h2>Twitter clone</h2>
-    <h1>I will make Twitter clone right now</h1>
-    <p>Hello world</p>
-</body>
-</html>
+    <!-- Sidebar section starts  -->
+
+    <div class="sidebar">
+        <!-- For the twitter icon seperate span -->
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <!-- For the options we have a seperate container -->
+
+        <div class="sidebarOption active">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <h2>Home</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <h2>Explore</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                Notifications
+            </span>
+            <h2>Notifications</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                mail
+            </span>
+            <h2>Messages</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                bookmark_border
+            </span>
+            <h2>Bookmarks</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                list_alt
+            </span>
+            <h2>Lists</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+            <h2>Profile</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+                more_horiz
+            </span>
+            <h2>More</h2>
+        </div>
+
+        <button class="sidebar_tweet">Tweet</button>
+
+    </div>
+
+    <!-- Sidebar section ends  -->
+
+    <!-- Feed Start -->
+
+    <div class="feed">
+
+        <div class="feed_header">
+            <h2>Home</h2>
+        </div>
+
+        <!-- Tweet Box  starts -->
+
+        <div class="tweetBox">
+            <form>
+                <div class="tweetbox_input">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                    <input type="text" placeholder="What's happening?" />
+                </div>
+                <button class="tweetBox_tweetButton">Tweet</button>
+            </form>
+        </div>
+
+        <!-- Tweet Box  ends -->
+
+        <!-- Post starts -->
+
+        <div class="tweet-body">
+
+            <!-- <div class="post">
+                
+                <div class="post_avatar">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" srcset="">
+                </div>
+                
+                <div class="post_body">
+                    
+                    <div class="post_header">
+                        <div class="post_headerText">
+                            <h3>Abhirup Dey
+                                <span class="post_headerSpecial hello">
+                                    <span class="material-symbols-outlined badge search">
+                                        verified
+                                </span> <span class="userName">@abhirup14</span> 
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="post_header_description">
+                        <p>Lorem ipsum dolor sit quasi corrupti similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi magnam facere assumenda repellat voluptatum obcaecati doloremque dicta odio a id. </p>
+                    </div>
+                </div>
+                
+                <img src="https://cdn.vox-cdn.com/thumbor/hmpaCUVdDwLr1-I9b1E62IX9kTM=/0x0:1800x2700/1400x1050/filters:focal(856x1604:857x1605)/cdn.vox-cdn.com/uploads/chorus_asset/file/24286088/226444_Mercedes_Avatar_DGolson_0011.jpg"
+                alt="">
+                
+                <div class="post_footer">
+                    <span class="material-symbols-outlined">
+                        repeat
+                    </span>
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <span class="material-symbols-outlined">
+                        publish
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="post">
+            
+            <div class="post_avatar">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" srcset="">
+            </div>
+            
+            <div class="post_body">
+                
+                <div class="post_header">
+                    <div class="post_headerText">
+                        <h3>Abhirup Dey
+                            <span class="post_headerSpecial hello">
+                                <span class="material-symbols-outlined badge search">
+                                    verified
+                                </span> <span class="userName">@abhirup14</span> 
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="post_header_description">
+                        <p>Lorem ipsum dolor sit quasi corrupti similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi magnam facere assumenda repellat voluptatum obcaecati doloremque dicta odio a id. </p>
+                    </div>
+                </div>
+                
+                <img src="https://cdn.vox-cdn.com/thumbor/hmpaCUVdDwLr1-I9b1E62IX9kTM=/0x0:1800x2700/1400x1050/filters:focal(856x1604:857x1605)/cdn.vox-cdn.com/uploads/chorus_asset/file/24286088/226444_Mercedes_Avatar_DGolson_0011.jpg"
+                alt="">
+                
+                <div class="post_footer">
+                    <span class="material-symbols-outlined">
+                        repeat
+                    </span>
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <span class="material-symbols-outlined">
+                        publish
+                    </span>
+                </div>
+                
+            </div>
+        </div> -->
+
+    </div>
+        
+        
+        <!-- Post ends -->
+
+    </div>
+    <!-- Feed Ends -->
+    
+    <!-- Widget Starts -->
+    
+    <div class="widgets">
+        <div class="widgets_input">
+            <span class="material-symbols-outlined" widgets_search>
+                search
+            </span>
+            <input type="text" placeholder="Search Twitter">
+        </div>
+        
+        <div class="widgets_widgetContainer">
+            <h2>What's happening?</h2>
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a
+                    href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a
+                    href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a
+                    href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a
+                    href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the
+                    Interior (@Interior) <a
+                    href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        
+        <!-- Widget ends -->
+        
+        
+        
+    </body>
+    
+    </html>
