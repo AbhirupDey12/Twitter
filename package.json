@@ -1,0 +1,24 @@
+{
+  "name": "my-twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "start": "snowpack dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhirupDey12/Twitter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhirupDey12/Twitter/issues"
+  },
+  "homepage": "https://github.com/AbhirupDey12/Twitter#readme",
+  "dependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
