@@ -273,7 +273,7 @@ window.addEventListener('scroll', () => {
         scrollTop,
         scrollHeight,
         clientHeight
-    } = document.documentElement;
+    } =  document.documentElement;
 
     // console.log(scrollTop, scrollHeight, clientHeight);
 
